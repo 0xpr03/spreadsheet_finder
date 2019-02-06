@@ -4,7 +4,7 @@ use std::path::{Path, PathBuf};
 use structopt::StructOpt;
 
 #[derive(StructOpt, Debug)]
-#[structopt(name = "basic")]
+#[structopt(name = "Spreadsheet Finder")]
 struct Opt {
     /// Regex for cell value to find
     #[structopt(short = "r", long = "regex")]

@@ -1,4 +1,4 @@
-## Spreadsheet Finer
+## Spreadsheet Finder
 
 Quick'n dirty find spreadsheet files containing specific values matching your regular expression.
 

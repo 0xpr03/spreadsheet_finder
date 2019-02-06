@@ -11,7 +11,11 @@ struct Opt {
     regex: Regex,
 
     /// Set file matcher regex
-    #[structopt(short = "n", long = "fileregex", default_value = r".*\.ods")]
+    #[structopt(
+        short = "n",
+        long = "fileregex",
+        default_value = r".*\.(xls|xlsx|xlsm|xlsb|xla|xlam|ods)$"
+    )]
     filematch: Regex,
 
     /// Folder to process

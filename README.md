@@ -4,11 +4,11 @@ Quick'n dirty find spreadsheet files containing specific values matching your re
 
 Example: 
 ```
-cargo run --release -- -r "Umlaute" "/Temp/Korrekturen"
+cargo run --release -- -r "^Umlaute$" "/Temp/Korrekturen"
 ```
 
 Finds all ods files containing "Umlaute" as cell value.
 You can specify the matcher for filenames also (default value used here):
 ```
-cargo run --release -- --fileregex ".*\.ods" "-r "Umlaute" "/Temp/Korrekturen"
+cargo run --release -- --fileregex ".*\.(xls|xlsx|xlsm|xlsb|xla|xlam|ods)" "-r "^Umlaute$" "/Temp/Korrekturen"
 ```
